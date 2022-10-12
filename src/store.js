@@ -6,7 +6,8 @@ import { rootReducer } from "./rootReducer";
 const persistConfig = {
   // configuration object for redux-persist
   key: "root",
-  storage, // define which storage to use
+  storage, // define which storage to use,
+  whitelist: ["first", "second"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

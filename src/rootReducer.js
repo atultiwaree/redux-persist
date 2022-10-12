@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
 import reducer from "./reducer";
+import reducerb from "./reducerb";
 export const rootReducer = combineReducers({
-  reducer,
+  first: reducer,
+  second: reducerb,
 });

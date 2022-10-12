@@ -4,3 +4,10 @@ export default (payload) => {
     payload,
   };
 };
+
+export const actionb = (payload) => {
+  return {
+    type: "SUM",
+    payload,
+  };
+};
